@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+body {
+  background-color: #000;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: fit-content;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-between;
+}
+header p {
+  padding: 0px 40px;
+}
+
+section {
+  top: 0;
+  margin-top: 0;
+  width: 700px;
+  height: 500px;
+  /* border: 3px solid rgb(38, 118, 194); */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+section p.judul-ndek-home {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 2.5em;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #000;
+}
+
+section div {
+  display: flex;
+  height: fit-content;
+  margin-bottom: 4px;
+}
+
+section div input {
+  border-radius: 2px;
+  border-color: black;
+  border-style: none none solid none;
+  width: 50px;
+  height: 40px;
+}
+
+section div p {
+  font-family: "Roboto Mono", sans-serif;
+  margin-right: 30px;
+}
+
+section button#start-game {
+  padding: 10px 15px;
+  font-family: "Roboto Mono", sans-serif;
+  background: none;
+  border: 1px solid #000;
+  margin-top: 90px;
+}
+
+section button#start-game:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
