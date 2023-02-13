@@ -1,0 +1,2 @@
+# Communication is hard
+This game is inspired by Keep Talking and Nobody Explodes.  Where the task is split between 2 person to defuse the bomb while the one defusing is not allowed to read the manual and the one reading the manual is not allowed to see nor defuse the bomb.
