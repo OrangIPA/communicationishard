@@ -43,7 +43,6 @@ function start_game() {
 
 function cable_listener() {
   const buttons = document.querySelectorAll("section button");
-  console.log(buttons.length);
   buttons.forEach((button, _i) => {
     button.addEventListener("click", () => {
       button.classList.add("clicked");
@@ -70,7 +69,7 @@ function create_word() {
   section.classList.add("word");
   const words = ["lorem", "ipsum", "dolor", "sit", "amet"];
   words.forEach((word, i) => {
-    const token = document.createElement("div");
+    const token = document.createElement("p");
     token.id = "word" + i;
     token.innerHTML = word;
     section.appendChild(token);
