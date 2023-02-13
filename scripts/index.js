@@ -15,6 +15,9 @@ function start_game() {
     return;
   }
 
+  // Add play class to body
+  document.body.classList.add("play");
+
   // Remove home screen
   section.remove();
 
@@ -35,6 +38,7 @@ function start_game() {
   };
   f();
   create_cable();
+  create_word();
 }
 
 function cable_listener() {
@@ -59,4 +63,17 @@ function create_cable() {
   });
   document.body.appendChild(section);
   cable_listener();
+}
+
+function create_word() {
+  const section = document.createElement("section");
+  section.classList.add("word");
+  const words = ["lorem", "ipsum", "dolor", "sit", "amet"];
+  words.forEach((word, i) => {
+    const token = document.createElement("div");
+    token.id = "word" + i;
+    token.innerHTML = word;
+    section.appendChild(token);
+  });
+  document.body.appendChild(section);
 }

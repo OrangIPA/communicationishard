@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   font-family: "Roboto Mono", sans-serif;
@@ -11,6 +11,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+body.play {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  gap: 20px;
 }
 
 header {
@@ -92,4 +99,5 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
