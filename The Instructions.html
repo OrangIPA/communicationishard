@@ -10,6 +10,9 @@
         background-color: #000;
         color: #fff;
       }
+      /* body {
+        padding: 0 20px;
+      } */
       div.attention {
         display: flex;
         flex-direction: column;
@@ -18,6 +21,10 @@
         height: 100vh;
         font-size: 36px;
         font-weight: 600;
+        text-align: center;
+      }
+      ul:not(.labeled) {
+        list-style: none;
       }
     </style>
     <title>The Instructions</title>
@@ -25,60 +32,253 @@
   <body>
     <div class="attention">
       <p>ATTENTION GAMERS!</p>
-      <p>ONLY YOU ARE ALLOWED SEE THIS PAGE, THE OTHER PERSON CANNOT SEE THIS PAGE</p>
-    </div>
-    <div class="cable">
-      <h1>THE BUTTONS</h1>
-      <p style="vertical-align: middle;">
-        <img style="vertical-align: middle;" src="instruction images/the cable.jpg"  width="400" />
-        or
-        <img style="vertical-align: middle;" src="instruction images/the cable 5.jpg" width="400" />
-        or
-        <img style="vertical-align: middle;" src="instruction images/the cable 4.jpg" width="400" />
+      <p>
+        ONLY YOU ARE ALLOWED SEE THIS PAGE, THE OTHER PERSON CANNOT SEE THIS
+        PAGE
       </p>
-      <p>This module have either 4, 5, or 6 buttons on it. Only one button need to be pressed. Button ordering starts from top left, then top right, mid left, mid right, and so on.</p>
-      <h2>6 Buttons</h2>
-      <p>IF the amount of red button(s) minus green button(s) is bigger than the amount of blue button(s) AND there is at least 1 green button(s), CLICK the first green button</p>
-      <p>OTHERWISE, IF there is more red button than cyan, CLICK the fourth button</p>
-      <p>OTHERWISE, IF there is a magenta button, CLICK the first magenta button</p>
-      <p>OTHERWISE, IF there is no cyan button, CLICK the blue button</p>
-      <p>OTHERWISE, CLICK the fifth button</p>
-      <h2>5 Buttons</h2>
-      <p>IF there is more than 1 blue button AND the second button is NOT red, CLICK the second button</p>
-      <p>OTHERWISE, IF there is NO red button, CLICK the cyan button</p>
-      <p>OTHERWISE, IF there is exactly 2 yellow buttons, CLICK the red button</p>
-      <p>OTHERWISE, IF the color of the first button is green OR the color of the fourth button is NOT green, CLICK the first button</p>
-      <p>OTHERWISE, CLICK the last button</p>
-      <h2>4 Buttons</h2>
-      <p>IF the amount of red button(s) is strictly bigger than green button AND there is exactly 1 yellow button, CLICK the yellow button</p>
-      <p>OTHERWISE, IF there is more than 1 yellow button, CLICK the last yellow button</p>
-      <p>OTHERWISE, IF the third button is cyan AND the second button is yellow, CLICK the third button</p>
-      <p>OTHERWISE, IF there is NO magenta button, CLICK the first button </p>
-      <p>OTHERWISE, IF there is exactly 1 red button AND more than 1 green button, CLICK the red button</p>
-      <p>OTHERWISE, CLICK the second button</p>
-      <p></p>
     </div>
-    <div class="section2word">
-      <h1>THE WORDS</h1>
-        <img src="instruction images/word.jpg" width="400">
+    <ul>
+      <li class="cable">
+        <h1>THE BUTTONS</h1>
+        <p style="vertical-align: middle">
+          <img
+            style="vertical-align: middle"
+            src="instruction images/the cable.jpg"
+            width="400"
+          />
+          or
+          <img
+            style="vertical-align: middle"
+            src="instruction images/the cable 5.jpg"
+            width="400"
+          />
+          or
+          <img
+            style="vertical-align: middle"
+            src="instruction images/the cable 4.jpg"
+            width="400"
+          />
+        </p>
+        <p>
+          This module have either 4, 5, or 6 buttons on it. Only one button need
+          to be pressed. Button ordering starts from top left, then top right,
+          mid left, mid right, and so on.
+        </p>
+        <ul>
+          <li>
+            <h2>6 Buttons</h2>
+            <ul class="labeled">
+              <li>
+                <p>
+                  IF the amount of red button(s) minus green button(s) is bigger
+                  than the amount of blue button(s) AND there is at least 1
+                  green button(s), CLICK the first green button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is more red button than cyan, CLICK the
+                  fourth button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is a magenta button, CLICK the first
+                  magenta button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is no cyan button, CLICK the blue button
+                </p>
+              </li>
+              <li>
+                <p>OTHERWISE, CLICK the fifth button</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>5 Buttons</h2>
+            <ul class="labeled">
+              <li>
+                <p>
+                  IF there is more than 1 blue button AND the second button is NOT
+                  red, CLICK the second button
+                </p>
+              </li>
+              <li>
+                <p>OTHERWISE, IF there is NO red button, CLICK the cyan button</p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is exactly 2 yellow buttons, CLICK the red
+                  button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the color of the first button is green OR the color
+                  of the fourth button is NOT green, CLICK the first button
+                </p>
+              </li>
+              <li>
+                <p>OTHERWISE, CLICK the last button</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>4 Buttons</h2>
+            <ul class="labeled">
+              <li>
+                <p>
+                  IF the amount of red button(s) is strictly bigger than green
+                  button AND there is exactly 1 yellow button, CLICK the yellow
+                  button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is more than 1 yellow button, CLICK the last
+                  yellow button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the third button is cyan AND the second button is
+                  yellow, CLICK the third button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is NO magenta button, CLICK the first button
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF there is exactly 1 red button AND more than 1 green
+                  button, CLICK the red button
+                </p>
+              </li>
+              <li>
+                <p>OTHERWISE, CLICK the second button</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="section2word">
+        <h1>THE WORDS</h1>
+        <img src="instruction images/word.jpg" width="400" />
         <p>The ordering start from top to bottom</p>
-        <h2>STEP 1</h2>
-        <h3>Determine what list to use in STEP 2</h3>
-        <p>IF the first word is "CHEETAH" and the fourth word is "WAIT", use list A</p>
-        <p>OTHERWISE, IF the second word is "LEFT"    and there is no "YOU", use list B</p>
-        <p>OTHERWISE, IF the first word is "FIRST",   and the second word is "YAHAHA", use list C</p>
-        <p>OTHERWISE, IF the fourth word is "FIRST"   and the first word is "NGISING", use list D</p>
-        <p>OTHERWISE, IF the first word is "EH",      and the third word is "HAYYUKK, use list E</p>
-        <p>OTHERWISE, IF the first word is "LOLO",    and the fifth word is "BLOOD", use list F</p>
-        <p>OTHERWISE, IF the third word is "LOREM",   and the fourth word is "IPSUM", use list E BUT backward</p>
-        <h2>STEP 2</h2>
-        <h3>Based on STEP 1, the correct word is is the first word that appears in it's corresponding list. Except if there is an instruction to use it backward. Then, it's the last word to appear on the list</h3>
-        <p>A: "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN", "YAHAHA", "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS", "IPA", "IPSUM", "YOU", "WHERE", "KILL", "LOLO", "WHAT", "HOOH", "EH", "KOSONG", "NGISING", "WADOH"</p>
-        <p>B: "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST", "LOLO", "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA", "WAIT", "LOREM", "YOU", "HOOH", "KOSONG", "LEFT", "WHERE", "IPSUM", "BLOOD", "HAYYUKK", "RIGHT"</p>
-        <p>C: "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "YAHAHA", "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT", "BLOOD", "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE", "FIRST", "LOLO", "HAYYUKK"</p>
-        <p>D: "NGISING", "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH", "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM", "EXPLODE", "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU", "KOSONG", "YAHAHA", "CHEETAH"</p>
-        <p>E: "KILL", "IPSUM", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT", "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT", "WHERE", "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING", "FIRST", "WADOH", "WHEN", "CHESS"</p>
-        <p>F: "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK", "IPSUM", "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING", "FIRST", "BLOOD", "WHERE", "LOLO", "LOREM", "HOOH", "YOU", "LEFT", "RIGHT", "KOSONG", "EXPLODE"</p>
-    </div>
+        <ul>
+          <li>
+            <h2>STEP 1</h2>
+            <h3>Determine what list to use in STEP 2</h3>
+            <ul class="labeled">
+              <li>
+                <p>
+                  IF the first word is "CHEETAH" and the fourth word is "WAIT", use list
+                  A
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the second word is "LEFT" and there is no "YOU", use
+                  list B
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the first word is "FIRST", and the second word is
+                  "YAHAHA", use list C
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the fourth word is "FIRST" and the first word is
+                  "NGISING", use list D
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the first word is "EH", and the third word is "HAYYUKK,
+                  use list E
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the first word is "LOLO", and the fifth word is "BLOOD",
+                  use list F
+                </p>
+              </li>
+              <li>
+                <p>
+                  OTHERWISE, IF the third word is "LOREM", and the fourth word is
+                  "IPSUM", use list E BUT backward
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>STEP 2</h2>
+            <h3>
+              Based on STEP 1, the correct word is is the first word that appears in
+              it's corresponding list. Except if there is an instruction to use it
+              backward. Then, it's the last word to appear on the list
+            </h3>
+            <ol type="A">
+              <li>
+                <p>
+                  "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN", "YAHAHA",
+                  "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS", "IPA", "IPSUM", "YOU",
+                  "WHERE", "KILL", "LOLO", "WHAT", "HOOH", "EH", "KOSONG", "NGISING",
+                  "WADOH"
+                </p>
+              </li>
+              <li>
+                <p>
+                  "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST", "LOLO",
+                  "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA", "WAIT", "LOREM",
+                  "YOU", "HOOH", "KOSONG", "LEFT", "WHERE", "IPSUM", "BLOOD", "HAYYUKK",
+                  "RIGHT"
+                </p>
+              </li>
+              <li>
+                <p>
+                  "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "YAHAHA",
+                  "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT", "BLOOD",
+                  "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE", "FIRST", "LOLO",
+                  "HAYYUKK"
+                </p>
+              </li>
+              <li>
+                <p>
+                  "NGISING", "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH",
+                  "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM", "EXPLODE",
+                  "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU", "KOSONG", "YAHAHA",
+                  "CHEETAH"
+                </p>
+              </li>
+              <li>
+                <p>
+                  "KILL", "IPSUM", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT",
+                  "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT", "WHERE",
+                  "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING", "FIRST", "WADOH",
+                  "WHEN", "CHESS"
+                </p>
+              </li>
+              <li>
+                <p>
+                  "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK", "IPSUM",
+                  "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING", "FIRST", "BLOOD",
+                  "WHERE", "LOLO", "LOREM", "HOOH", "YOU", "LEFT", "RIGHT", "KOSONG",
+                  "EXPLODE"
+                </p>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </body>
 </html>
