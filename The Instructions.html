@@ -10,9 +10,6 @@
         background-color: #000;
         color: #fff;
       }
-      /* body {
-        padding: 0 20px;
-      } */
       div.attention {
         display: flex;
         flex-direction: column;
@@ -37,6 +34,14 @@
         PAGE
       </p>
     </div>
+    <h1>OBJECTIVES</h1>
+    <p>
+      Your task is to provide your friend with information contained in this
+      page such that your friend can solve all the modules. If the background of
+      the module turn green, it means the module is solved. If it flashes red,
+      it means you clicked the wrong button and one of your lives is taken from
+      you.
+    </p>
     <ul>
       <li class="cable">
         <h1>THE BUTTONS</h1>
@@ -62,7 +67,9 @@
         <p>
           This module have either 4, 5, or 6 buttons on it. Only one button need
           to be pressed. Button ordering starts from top left, then top right,
-          mid left, mid right, and so on.
+          mid left, mid right, and so on. If the button is clicked and the color
+          turn black, you clicked the wrong button. If it have grey outline, you
+          clicked the right button.
         </p>
         <ul>
           <li>
@@ -102,12 +109,14 @@
             <ul class="labeled">
               <li>
                 <p>
-                  IF there is more than 1 blue button AND the second button is NOT
-                  red, CLICK the second button
+                  IF there is more than 1 blue button AND the second button is
+                  NOT red, CLICK the second button
                 </p>
               </li>
               <li>
-                <p>OTHERWISE, IF there is NO red button, CLICK the cyan button</p>
+                <p>
+                  OTHERWISE, IF there is NO red button, CLICK the cyan button
+                </p>
               </li>
               <li>
                 <p>
@@ -117,8 +126,9 @@
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the color of the first button is green OR the color
-                  of the fourth button is NOT green, CLICK the first button
+                  OTHERWISE, IF the color of the first button is green OR the
+                  color of the fourth button is NOT green, CLICK the first
+                  button
                 </p>
               </li>
               <li>
@@ -138,25 +148,26 @@
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF there is more than 1 yellow button, CLICK the last
-                  yellow button
+                  OTHERWISE, IF there is more than 1 yellow button, CLICK the
+                  last yellow button
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the third button is cyan AND the second button is
-                  yellow, CLICK the third button
+                  OTHERWISE, IF the third button is cyan AND the second button
+                  is yellow, CLICK the third button
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF there is NO magenta button, CLICK the first button
+                  OTHERWISE, IF there is NO magenta button, CLICK the first
+                  button
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF there is exactly 1 red button AND more than 1 green
-                  button, CLICK the red button
+                  OTHERWISE, IF there is exactly 1 red button AND more than 1
+                  green button, CLICK the red button
                 </p>
               </li>
               <li>
@@ -177,20 +188,20 @@
             <ul class="labeled">
               <li>
                 <p>
-                  IF the first word is "CHEETAH" and the fourth word is "WAIT", use list
-                  A
+                  IF the first word is "CHEETAH" and the fourth word is "WAIT",
+                  use list A
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the second word is "LEFT" and there is no "YOU", use
-                  list B
+                  OTHERWISE, IF the second word is "LEFT" and there is no "YOU",
+                  use list B
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the first word is "FIRST", and the second word is
-                  "YAHAHA", use list C
+                  OTHERWISE, IF the first word is "FIRST", and the second word
+                  is "YAHAHA", use list C
                 </p>
               </li>
               <li>
@@ -201,20 +212,20 @@
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the first word is "EH", and the third word is "HAYYUKK,
-                  use list E
+                  OTHERWISE, IF the first word is "EH", and the third word is
+                  "HAYYUKK, use list E
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the first word is "LOLO", and the fifth word is "BLOOD",
-                  use list F
+                  OTHERWISE, IF the first word is "LOLO", and the fifth word is
+                  "BLOOD", use list F
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the third word is "LOREM", and the fourth word is
-                  "IPSUM", use list E BUT backward
+                  OTHERWISE, IF the third word is "LOREM", and the fourth word
+                  is "IPSUM", use list E BUT backward
                 </p>
               </li>
             </ul>
@@ -222,57 +233,58 @@
           <li>
             <h2>STEP 2</h2>
             <h3>
-              Based on STEP 1, the correct word is is the first word that appears in
-              it's corresponding list. Except if there is an instruction to use it
-              backward. Then, it's the last word to appear on the list
+              Based on STEP 1, the correct word is is the first word that
+              appears in it's corresponding list. Except if there is an
+              instruction to use it backward. Then, it's the last word to appear
+              on the list
             </h3>
             <ol type="A">
               <li>
                 <p>
-                  "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN", "YAHAHA",
-                  "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS", "IPA", "IPSUM", "YOU",
-                  "WHERE", "KILL", "LOLO", "WHAT", "HOOH", "EH", "KOSONG", "NGISING",
-                  "WADOH"
+                  "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN",
+                  "YAHAHA", "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS",
+                  "IPA", "IPSUM", "YOU", "WHERE", "KILL", "LOLO", "WHAT",
+                  "HOOH", "EH", "KOSONG", "NGISING", "WADOH"
                 </p>
               </li>
               <li>
                 <p>
-                  "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST", "LOLO",
-                  "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA", "WAIT", "LOREM",
-                  "YOU", "HOOH", "KOSONG", "LEFT", "WHERE", "IPSUM", "BLOOD", "HAYYUKK",
-                  "RIGHT"
+                  "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST",
+                  "LOLO", "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA",
+                  "WAIT", "LOREM", "YOU", "HOOH", "KOSONG", "LEFT", "WHERE",
+                  "IPSUM", "BLOOD", "HAYYUKK", "RIGHT"
                 </p>
               </li>
               <li>
                 <p>
                   "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "YAHAHA",
-                  "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT", "BLOOD",
-                  "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE", "FIRST", "LOLO",
-                  "HAYYUKK"
+                  "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT",
+                  "BLOOD", "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE",
+                  "FIRST", "LOLO", "HAYYUKK"
                 </p>
               </li>
               <li>
                 <p>
                   "NGISING", "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH",
-                  "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM", "EXPLODE",
-                  "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU", "KOSONG", "YAHAHA",
-                  "CHEETAH"
+                  "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM",
+                  "EXPLODE", "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU",
+                  "KOSONG", "YAHAHA", "CHEETAH"
                 </p>
               </li>
               <li>
                 <p>
                   "KILL", "IPSUM", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT",
-                  "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT", "WHERE",
-                  "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING", "FIRST", "WADOH",
-                  "WHEN", "CHESS"
+                  "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT",
+                  "WHERE", "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING",
+                  "FIRST", "WADOH", "WHEN", "CHESS"
                 </p>
               </li>
               <li>
                 <p>
-                  "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK", "IPSUM",
-                  "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING", "FIRST", "BLOOD",
-                  "WHERE", "LOLO", "LOREM", "HOOH", "YOU", "LEFT", "RIGHT", "KOSONG",
-                  "EXPLODE"
+                  "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK",
+                  "IPSUM", "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING",
+                  "FIRST", "BLOOD", "WHERE", "LOLO", "LOREM", "HOOH", "YOU",
+                  "LEFT", "RIGHT", "KOSONG", "EXPLODE"
                 </p>
               </li>
             </ol>
