@@ -18,9 +18,6 @@ section.cable button {
 section.cable button.clicked {
   border: 4px solid #444;
 }
-section.cable button.clickedwrong {
-  background-color: #000;
-}
 section.cable button:hover:not(.clicked) {
   border: 2px dashed #000;
 }
