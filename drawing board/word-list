@@ -22,3 +22,39 @@ kosong
 wadoh
 you
 first
+
+LIST A
+    "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN",
+    "YAHAHA", "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS",
+    "IPA", "IPSUM", "YOU", "WHERE", "KILL", "LOLO", "WHAT",
+    "HOOH", "EH", "KOSONG", "NGISING", "WADOH"
+
+LIST B
+    "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST",
+    "LOLO", "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA",
+    "WAIT", "LOREM", "YOU", "HOOH", "KOSONG", "LEFT", "WHERE",
+    "IPSUM", "BLOOD", "HAYYUKK", "RIGHT"
+
+LIST C
+    "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "YAHAHA",
+    "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT",
+    "BLOOD", "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE",
+    "FIRST", "LOLO", "HAYYUKK"
+
+LIST D
+    "NGISING", "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH",
+    "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM",
+    "EXPLODE", "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU",
+    "KOSONG", "YAHAHA", "CHEETAH"
+
+LIST E
+    "KILL", "IPSUM", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT",
+    "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT",
+    "WHERE", "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING",
+    "FIRST", "WADOH", "WHEN", "CHESS"
+
+LIST F
+    "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK",
+    "IPSUM", "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING",
+    "FIRST", "BLOOD", "WHERE", "LOLO", "LOREM", "HOOH", "YOU",
+    "LEFT", "RIGHT", "KOSONG", "EXPLODE"

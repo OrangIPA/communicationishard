@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="css/cable.css">
     <link rel="stylesheet" href="css/word.css">
     <link rel="icon" type="image/x-icon" href="images/communication is hard.png">
-    <script src="scripts/index.js"></script>
+    <script type="module" src="scripts/index.js"></script>
     <title>Yahaha Hayyuukk</title>
   </head>
   <body>
     <header>
-      <p>time left:</p>
-      <p>lives left: 3</p>
+      <p id="time-left">time left:</p>
+      <p id="lives-left">lives left: 3</p>
     </header>
     <section id="home">
       <p class="judul-ndek-home">Mbo game opo iki</p>
       <div><p>modules</p><input type="number" name="mod-count" id="mod-count"></div>
       <div><p>time in secs</p><input type="number" name="time" id="time"></div>
-      <button id="start-game" onclick="start_game()">Start!</button>
+      <button id="start-game">Start!</button>
     </section>
   </body>
 </html>
