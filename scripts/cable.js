@@ -33,23 +33,11 @@ function cable_correct_6(set) {
     cyan_count,
     magenta_count,
   ] = color_count(set);
-  console.log(
-    red_count,
-    green_count,
-    blue_count,
-    yellow_count,
-    cyan_count,
-    magenta_count
-  );
 
   // First condition: IF the amount of red button(s) minus green button(s) is bigger than the amount of blue button(s) AND there is at least 1 green button(s), CLICK the first green button
   if (red_count - green_count > blue_count && green_count > 0){
-    // set.forEach((v, i) => {
-    //   if (v === "#0f0") return i;
-    // });
     for (let i = 0; i < set.length; i++) {
       if (set[i] === "#0f0") {
-        console.log("first condition")
         return i;
       }
     }
@@ -57,19 +45,13 @@ function cable_correct_6(set) {
 
   // Second condition: OTHERWISE, IF there is more red button than cyan, CLICK the fourth button
   if (red_count > cyan_count) {
-    console.log("second condition")
     return 3;
   }
 
   // Third condition: OTHERWISE, IF there is a magenta button, CLICK the first magenta button
   if (magenta_count > 0){
-    // set.forEach((v, i) => {
-    //   console.log("third condition");
-    //   if (v === "#f0f") return i;
-    // });
     for (let i = 0; i < set.length; i++) {
       if (set[i] === "#f0f") {
-        console.log("third condition")
         return i;
       }
     }
@@ -78,35 +60,26 @@ function cable_correct_6(set) {
 
   // Fourth condition: OTHERWISE, IF there is no cyan button, CLICK the third button
   if (cyan_count === 0) {
-    console.log("fourth condition");
     return 2;
   }
 
   // None of the above: OTHERWISE, CLICK the fifth button
-  console.log("None");
   return 4;
 }
 
 function cable_correct_5(set) {
   // Color count
   let [red, green, blue, yellow, cyan, magenta] = color_count(set);
-  console.log(red, green, blue, yellow, cyan, magenta);
 
   // First condition: IF there is more than 1 blue button AND the second button is NOT red, CLICK the second button
   if (blue > 1 && set[1] !== "#f00") {
-    console.log("first condition");
     return 1;
   }
 
   // Second condition: OTHERWISE, IF there is NO red button, AND there is exactly 1 cyan button, CLICK the cyan button
   if (red === 0 && cyan === 1){
-    // set.forEach((v, i) => {
-    //   console.log("second condition");
-    //   if (v === "#0ff") return i;
-    // });
     for (let i = 0; i < set.length; i++) {
       if (set[i] === "#0ff") {
-        console.log("second condition")
         return i;
       }
     }
@@ -114,35 +87,26 @@ function cable_correct_5(set) {
 
   // Third condition: OTHERWISE, IF there is exactly 2 yellow buttons, CLICK the third button
   if (yellow === 2) {
-    console.log("third condition");
     return 2;
   }
 
   // Fourth condition: OTHERWISE, IF the color of the first button is green AND the color of the fourth button is NOT green, CLICK the first button
   if (set[0] === "#0f0" && set[3] !== "#0f0") {
-    console.log("fourth condition");
     return 0;
   }
 
   // None of the above: OTHERWISE, CLICK the last button
-  console.log("None");
   return 4;
 }
 
 function cable_correct_4(set) {
   // Color count
   let [red, green, blue, yellow, cyan, magenta] = color_count(set);
-  console.log(red, green, blue, yellow, cyan, magenta);
 
   // First condition: IF the amount of red button(s) is bigger than green button AND there is exactly 1 yellow button, CLICK the yellow button
   if (red > green && yellow === 1){
-    // set.forEach((v, i) => {
-    //   console.log("first condition");
-    //   if (v === "#ff0") return i;
-    // });
     for (let i = 0; i < set.length; i++) {
       if (set[i] === "#ff0") {
-        console.log("first condition")
         return i;
       }
     }
@@ -152,32 +116,24 @@ function cable_correct_4(set) {
   // Second condition: OTHERWISE, IF there is more than 1 yellow button, CLICK the last yellow button
   if (yellow > 1) {
     for (let i = 3; i >= 0; i--) {
-      console.log("second condition");
       if (set[i] === "#ff0") return i;
     }
   }
 
   // Third condition: OTHERWISE, IF the third button is cyan AND the second button is yellow, CLICK the third button
   if (set[2] === "#0ff" && set[1] === "#ff0") {
-    console.log("third condition");
     return 2;
   }
 
   // Fourth condition: OTHERWISE, IF there is NO magenta button, CLICK the first button
   if (magenta === 0) {
-    console.log("fourth condition");
     return 0;
   }
 
   // Fifth condition: OTHERWISE, IF there is exactly 1 red button AND more than 1 green button, CLICK the red button
   if (red === 1 && green > 1){
-    // set.forEach((v, i) => {
-    //   console.log("fifth condition");
-    //   if (v === "#f00") return i;
-    // });
     for (let i = 0; i < set.length; i++) {
       if (set[i] === "#f00") {
-        console.log("fifth condition")
         return i;
       }
     }
@@ -185,7 +141,6 @@ function cable_correct_4(set) {
   }
 
   // None of the above: OTHERWISE, CLICK the second button
-  console.log("None");
   return 1;
 }
 
@@ -230,24 +185,15 @@ export function create_cable(id) {
   const cable_val = Math.floor(Math.random() * 3) + 4;
   const cable_color = cable_color_rand(cable_val);
 
-  // DEBUG
-  // const cable_color = ["#f00", "#f00", "#f00", "#f0f", "#0f0", "#f0f"];
-  // const cable_color = ["#f0f", "#f0f", "#f0f", "#f0f", "#f0f", "#f0f"];
-  // const cable_val = 6;
-  // DEBUG
-
   let correct = null;
   switch (cable_val) {
     case 4:
-      console.log("4!");
       correct = cable_correct_4(cable_color);
       break;
     case 5:
-      console.log("5!");
       correct = cable_correct_5(cable_color);
       break;
     case 6:
-      console.log("6!");
       correct = cable_correct_6(cable_color);
       break;
     default:
@@ -262,5 +208,4 @@ export function create_cable(id) {
   });
   document.body.appendChild(section);
   cable_listener(correct, id);
-  console.log(correct);
 }

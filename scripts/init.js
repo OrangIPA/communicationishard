@@ -3,9 +3,9 @@ import { create_word } from "./word.js";
 
 export function start_game() {
   // Warn user that this screen is for defuser only
-//   alert(
-//     "ATTENTION: this screen is for you only, no other person is allowed to see this screen"
-//   );
+  alert(
+    "ATTENTION: this screen is for you only, no other person is allowed to see this screen"
+  );
 
   // Declaration and time initialization
   const section = document.getElementById("home");
