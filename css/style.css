@@ -4,6 +4,15 @@
   font-family: "Roboto Mono", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background-color: #000;
   margin-top: 0;
@@ -81,7 +90,8 @@ section button#start-game {
   font-family: "Roboto Mono", sans-serif;
   background: none;
   border: 1px solid #000;
-  margin-top: 90px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 section button#start-game:hover {

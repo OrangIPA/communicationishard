@@ -144,9 +144,8 @@
             <ul class="labeled">
               <li>
                 <p>
-                  IF the amount of red button(s) is bigger than green
-                  button AND there is exactly 1 yellow button, CLICK the yellow
-                  button
+                  IF the amount of red button(s) is bigger than green button AND
+                  there is exactly 1 yellow button, CLICK the yellow button
                 </p>
               </li>
               <li>
@@ -197,45 +196,56 @@
             <ul class="labeled">
               <li>
                 <p>
+                  <!-- first case -->
                   IF the first word is "CHEETAH" and the fourth word is "WAIT",
                   use list A
                 </p>
               </li>
               <li>
                 <p>
-                  OTHERWISE, IF the second word is "LEFT" and there is no "YOU",
-                  use list B
+                  <!-- second case -->
+                  OTHERWISE, IF the second word is "LEFT" and the third word is
+                  "YOU", use list B
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- third case -->
                   OTHERWISE, IF the first word is "FIRST", and the second word
                   is "YAHAHA", use list C
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- fourth case -->
                   OTHERWISE, IF the fourth word is "FIRST" and the first word is
                   "NGISING", use list D
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- fifth case -->
                   OTHERWISE, IF the first word is "EH", and the third word is
-                  "HAYYUKK, use list E
+                  "HAYYUKK", use list E
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- sixth case -->
                   OTHERWISE, IF the first word is "LOLO", and the fifth word is
                   "BLOOD", use list F
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- seventh case -->
                   OTHERWISE, IF the third word is "LOREM", and the fourth word
                   is "IPSUM", use list E BUT backward
                 </p>
+              </li>
+              <li>
+                <!-- otherwise -->
+                <p>OTHERWISE, use list A BUT backward</p>
               </li>
             </ul>
           </li>
@@ -250,50 +260,55 @@
             <ol type="A">
               <li>
                 <p>
-                  "WAIT", "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN",
-                  "YAHAHA", "CHEETAH", "EXPLODE", "LOREM", "LEFT", "CHESS",
-                  "IPA", "IPSUM", "YOU", "WHERE", "KILL", "LOLO", "WHAT",
-                  "HOOH", "EH", "KOSONG", "NGISING", "WADOH"
+                  <!-- A -->
+                  "FIRST", "BLOOD", "RIGHT", "HAYYUKK", "WHEN", "YAHAHA",
+                  "EXPLODE", "LOREM", "LEFT", "CHESS", "IPA", "IPSUM", "YOU",
+                  "WHERE", "KILL", "LOLO", "WHAT", "HOOH", "EH", "KOSONG",
+                  "NGISING", "WADOH"
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- B -->
                   "EXPLODE", "EH", "WADOH", "YAHAHA", "NGISING", "FIRST",
                   "LOLO", "CHEETAH", "WHEN", "CHESS", "KILL", "WHAT", "IPA",
-                  "WAIT", "LOREM", "YOU", "HOOH", "KOSONG", "LEFT", "WHERE",
-                  "IPSUM", "BLOOD", "HAYYUKK", "RIGHT"
+                  "WAIT", "LOREM", "HOOH", "KOSONG", "WHERE", "IPSUM", "BLOOD",
+                  "HAYYUKK", "RIGHT"
                 </p>
               </li>
               <li>
                 <p>
-                  "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "YAHAHA",
-                  "WADOH", "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT",
-                  "BLOOD", "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE",
-                  "FIRST", "LOLO", "HAYYUKK"
+                  <!-- C -->
+                  "CHEETAH", "CHESS", "IPSUM", "WHAT", "WHEN", "EH", "WADOH",
+                  "EXPLODE", "IPA", "NGISING", "YOU", "LEFT", "RIGHT", "BLOOD",
+                  "KILL", "LOREM", "KOSONG", "HOOH", "WAIT", "WHERE", "LOLO",
+                  "HAYYUKK"
                 </p>
               </li>
               <li>
                 <p>
-                  "NGISING", "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH",
-                  "WHERE", "FIRST", "LOLO", "WHEN", "LEFT", "WHAT", "LOREM",
-                  "EXPLODE", "WAIT", "IPA", "WADOH", "BLOOD", "KILL", "YOU",
-                  "KOSONG", "YAHAHA", "CHEETAH"
+                  <!-- D -->
+                  "RIGHT", "IPSUM", "HAYYUKK", "HOOH", "CHESS", "EH", "WHERE",
+                  "LOLO", "WHEN", "LEFT", "WHAT", "LOREM", "EXPLODE", "WAIT",
+                  "IPA", "WADOH", "BLOOD", "KILL", "YOU", "KOSONG", "YAHAHA",
+                  "CHEETAH"
                 </p>
               </li>
               <li>
                 <p>
-                  "KILL", "IPSUM", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT",
-                  "YAHAHA", "CHEETAH", "YOU", "LOREM", "HAYYUKK", "WHAT",
-                  "WHERE", "IPA", "EH", "BLOOD", "HOOH", "LOLO", "NGISING",
-                  "FIRST", "WADOH", "WHEN", "CHESS"
+                  <!-- E -->
+                  "KILL", "EXPLODE", "RIGHT", "KOSONG", "LEFT", "WAIT",
+                  "YAHAHA", "CHEETAH", "YOU", "WHAT", "WHERE", "IPA", "BLOOD",
+                  "HOOH", "LOLO", "NGISING", "FIRST", "WADOH", "WHEN", "CHESS"
                 </p>
               </li>
               <li>
                 <p>
+                  <!-- F -->
                   "WADOH", "YAHAHA", "CHESS", "WHEN", "KILL", "HAYYUKK",
                   "IPSUM", "CHEETAH", "EH", "WAIT", "IPA", "WHAT", "NGISING",
-                  "FIRST", "BLOOD", "WHERE", "LOLO", "LOREM", "HOOH", "YOU",
-                  "LEFT", "RIGHT", "KOSONG", "EXPLODE"
+                  "FIRST", "WHERE", "LOREM", "HOOH", "YOU", "LEFT", "RIGHT",
+                  "KOSONG", "EXPLODE"
                 </p>
               </li>
             </ol>
